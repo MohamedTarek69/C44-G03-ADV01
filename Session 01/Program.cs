@@ -141,6 +141,38 @@ namespace Session_01
             //    Console.WriteLine(emp);
             //}
 
+            //Employee[] employees =
+            //{
+            //    new Employee(10, "Amr", 4000),
+            //    new Employee(20, "May", 9000),
+            //    new Employee(30, "Mona", 3000),
+            //    new Employee(40, "Omar", 2000),
+            //    new Employee(50, "Ahmed", 10000),
+            //};
+
+            //Helper<Employee>.BubbleSort(employees,new EmployeeNameComparer());
+
+            //foreach (Employee emp in employees)
+            //{
+            //    Console.WriteLine(emp);
+            //}
+
+            //Employee[] employees =
+            //{
+            //    new Employee(10, "Amr", 4000, 20),
+            //    new Employee(20, "May", 9000, 25),
+            //    new Employee(30, "Mona", 3000, 30),
+            //    new Employee(40, "Omar", 2000, 28),
+            //    new Employee(50, "Ahmed", 10000, 40),
+            //};
+
+            //Helper<Employee>.BubbleSort(employees, new EmployeeAgeComparer());
+
+            //foreach (Employee emp in employees)
+            //{
+            //    Console.WriteLine(emp);
+            //}
+
             #endregion
         }
 

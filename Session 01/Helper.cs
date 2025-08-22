@@ -24,6 +24,24 @@ namespace Session_01
                 }
             }
         }
+
+        public static void BubbleSort(T[] array, IComparer<T> comparer)
+        {
+            if (array is null) return;
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                for (int j = 0; j < array.Length - 1 - i; j++)
+                {
+                    // //if (array[j] > array[j + 1])
+                    // //if (array[j].CompareTo(array[j + 1]) > 0)
+                    if (comparer.Compare(array[j], array[j + 1]) > 0)
+                    {
+                        Helper<T>.SWAP(ref array[j], ref array[j + 1]);
+                    }
+                }
+            }
+        }
+
         public static int LinearSearch(T[] arr , T target)
         {
             if (arr?.Length>0 && target is not null)
