@@ -9,17 +9,37 @@ namespace Session_01
     // Generic Class
     internal static class Helper<T>
     {
+        public static int LinearSearch(T[] arr , T target)
+        {
+            if (arr?.Length>0 && target is not null)
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    //if (arr[i] == target)
+                    //if (arr[i]?.Equals(target)??false) 
+                    if(target.Equals(arr[i]))
+                        return i;
+                }
+            }
+            return -1;
+        }
+
+
+
+        // Genaric Method
         public static void Print(T X)
         {
             Console.WriteLine(X);
         }
-        // Genaric Method
+
         public static void SWAP(ref T x , ref T y)
         {
             T temp = x;
             x = y;
             y = temp;
         }
+
+
         // Passing Paramter Value Type by Value
         //public static void SWAP(ref int x , ref int y)
         //{
