@@ -36,7 +36,7 @@ namespace Session_01
             //int result = Helper.LinearSearch(arr, 50);
             //Console.WriteLine(result);
 
-            //Point[] points = 
+            //Point[] points =
             //{
             //    new Point(1, 2),
             //    new Point(10, 20),
@@ -71,6 +71,26 @@ namespace Session_01
             //Console.WriteLine(result);
 
             #endregion
+
+            //-----------------------------------Vedio 03-----------------------------------
+            //string name01 = "Route";
+            //string name02 = "Route";
+
+            //Console.WriteLine(name01.Equals(name02));
+
+            //Console.WriteLine(name01.GetHashCode());
+            //Console.WriteLine(name02.GetHashCode());
+
+            //Employee E01 = new Employee(10, "Mona", 9000);
+            //Employee E02 = new Employee(10, "Mona", 9000);
+
+            //if (E01.Equals(E02))
+            //    Console.WriteLine("Equals");
+            //else
+            //    Console.WriteLine("Not Equals");
+
+            //Console.WriteLine(E01.GetHashCode());
+            //Console.WriteLine(E02.GetHashCode());
         }
 
     }
