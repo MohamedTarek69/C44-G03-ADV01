@@ -72,6 +72,7 @@ namespace Session_01
 
             #endregion
 
+            #region Equals & GetHashCode
             //-----------------------------------Vedio 03-----------------------------------
             //string name01 = "Route";
             //string name02 = "Route";
@@ -111,8 +112,36 @@ namespace Session_01
             //Console.WriteLine(result);
 
             //int result1 = Helper<Employee>.LinearSearch(employees, employee , new EmployeeIdEqualityComparer());
-            //Console.WriteLine(result1);
+            //Console.WriteLine(result1); 
 
+            #endregion
+
+            //-----------------------------------Vedio 07-----------------------------------
+            #region Bubble Sort
+            //int[] numbers = { 8, 4, 9, 7, 6, 10, 5, 3, 1, 2 };
+            //Helper<int>.BubbleSort(numbers);
+            //foreach (int item in numbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Employee[] employees =
+            //{
+            //    new Employee(10, "Amr", 4000),
+            //    new Employee(20, "May", 9000),
+            //    new Employee(30, "Mona", 3000),
+            //    new Employee(40, "Omar", 2000),
+            //    new Employee(50, "Ahmed", 10000),
+            //};
+
+            //Helper<Employee>.BubbleSort(employees);
+
+            //foreach (Employee emp in employees)
+            //{
+            //    Console.WriteLine(emp);
+            //}
+
+            #endregion
         }
 
     }
