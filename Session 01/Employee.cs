@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Session_01
 {
-    internal class Employee
+    internal class Employee : IEquatable<Employee>
     {
         public int Id { get; set; }
         public string? Name { get; set; }
@@ -28,6 +28,17 @@ namespace Session_01
             //return (left.Id != right.Id) || (left.Name != right.Name) || (left.Salary != right.Salary);
             //return !left.Equals(right);
             return !(left == right);
+        }
+        public bool Equals(Employee? employee)
+        {
+            if(employee is not null)
+            {
+                return (this.Id == employee.Id) && (this.Name == employee.Name) && (this.Salary == employee.Salary);
+            }
+            else
+            {
+                return false;
+            }
         }
         
         public override bool Equals(object? obj)
@@ -76,5 +87,6 @@ namespace Session_01
              //return Id.GetHashCode() + (Name?.GetHashCode() ?? 0) + Salary.GetHashCode();
             return HashCode.Combine(Id, Name, Salary);
         }
+
     }
 }

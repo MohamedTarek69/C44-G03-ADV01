@@ -82,7 +82,7 @@ namespace Session_01
             //Console.WriteLine(name02.GetHashCode());
 
             //Employee E01 = new Employee(10, "Mona", 9000);
-            //Employee E02 = new Employee(10, "Mona", 9000);
+            //Employee E02 = new Employee(20, "Amr", 4000);
 
             //if (E01.Equals(E02))
             //    Console.WriteLine("Equals");
@@ -91,6 +91,28 @@ namespace Session_01
 
             //Console.WriteLine(E01.GetHashCode());
             //Console.WriteLine(E02.GetHashCode());
+
+            //-----------------------------------Vedio 04-----------------------------------
+
+
+            //-----------------------------------Vedio 06-----------------------------------
+            //Employee[] employees =
+            //{
+            //    new Employee(10, "Amr", 4000),
+            //    new Employee(20, "May", 9000),
+            //    new Employee(30, "Mona", 3000),
+            //    new Employee(40, "Omar", 2000),
+            //    new Employee(50, "Ahmed", 10000),
+            //};
+
+            //Employee employee = new Employee(20, "May", 9000);
+
+            //int result = Helper<Employee>.LinearSearch(employees, employee , new EmployeeNameEqualityComparer());
+            //Console.WriteLine(result);
+
+            //int result1 = Helper<Employee>.LinearSearch(employees, employee , new EmployeeIdEqualityComparer());
+            //Console.WriteLine(result1);
+
         }
 
     }

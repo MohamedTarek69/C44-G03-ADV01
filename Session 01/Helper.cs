@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Session_01
 {
     // Generic Class
-    internal static class Helper<T>
+    internal static class Helper<T> where T : IEquatable<T>
     {
         public static int LinearSearch(T[] arr , T target)
         {
@@ -18,6 +18,22 @@ namespace Session_01
                     //if (arr[i] == target)
                     //if (arr[i]?.Equals(target)??false) 
                     if(target.Equals(arr[i]))
+                        return i;
+                }
+            }
+            return -1;
+        }
+
+        public static int LinearSearch(T[] arr , T target , IEqualityComparer<T> comparer )
+        {
+            if (arr?.Length>0 && target is not null)
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    //if (arr[i] == target)
+                    //if (arr[i]?.Equals(target)??false) 
+                    //if(target.Equals(arr[i]))
+                    if (comparer.Equals(arr[i], target))
                         return i;
                 }
             }
