@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Session_01
 {
     // Generic Class
-    internal static class Helper<T> where T : IEquatable<T> , IComparable<T>
+    internal static class Helper<T> where T : IEquatable<T> , IComparable<T> , ICloneable
     {
         public static void BubbleSort(T[] array)
         {
@@ -88,6 +88,12 @@ namespace Session_01
             y = temp;
         }
 
+        public static void SWAP<T2>(ref T2 x, ref T2 y) where T2 : struct
+        {
+            T2 temp = x;
+            x = y;
+            y = temp;
+        }
 
         // Passing Paramter Value Type by Value
         //public static void SWAP(ref int x , ref int y)
