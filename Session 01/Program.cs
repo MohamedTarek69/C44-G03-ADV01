@@ -27,6 +27,27 @@ namespace Session_01
             return EvenNumberList;
         }
 
+        public static int FirstNonRepeatedCharacter(string str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+                bool Repeated = false;
+                for (int j = 0; j < str.Length; j++)
+                {
+                    if (str[i] == str[j] && i != j)
+                    {
+                        Repeated = true;
+                        break;
+                    }
+                }
+                if (!Repeated)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
         static void Main(string[] args)
         {
             #region Q1 
@@ -85,6 +106,20 @@ namespace Session_01
             //list.Add(4); //Unhandled exception. System.ArgumentException: The list is already full
             //Console.WriteLine(list.Get(3)); //Unhandled exception. System.ArgumentException: Inavlid Index
             //FixedSizeList<int> list2 = new FixedSizeList<int>(0); //Unhandled exception. System.ArgumentException: Capacity must be bigger than zero
+
+            #endregion
+
+            #region Q5
+            //string str = "aabbccdde";
+            //int index = FirstNonRepeatedCharacter(str);
+            //if (index == -1)
+            //{
+            //    Console.WriteLine("All are repeated");
+            //}
+            //else
+            //{ 
+            //    Console.WriteLine($"The first non-repeated character => {str[index]} with index => {index}");
+            //}
 
             #endregion
 
