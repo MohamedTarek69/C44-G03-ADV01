@@ -1,7 +1,19 @@
-﻿namespace Session_01
+﻿using System.Collections;
+
+namespace Session_01
 {
     internal class Program
     {
+        public static void ReverseArrList(ArrayList arrList)
+        { 
+            for (int i = 0; i < arrList.Count / 2;i++)
+            {
+                var temp = arrList[i];
+                arrList[i] = arrList[arrList.Count - 1 - i];
+                arrList[arrList.Count - 1 - i] = temp;
+            }
+        }
+
         static void Main(string[] args)
         {
             #region Q1 
@@ -18,9 +30,27 @@
             #endregion
 
             #region Q2
+            //ArrayList arrayList = new ArrayList() {1, 10, 100, 1000, 10000, 100000};
 
+            //Console.WriteLine("Original ArrayList:");
+
+            //foreach (int item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //ReverseArrList(arrayList);
+
+            //Console.WriteLine("Reversed ArrayList:");
+
+            //foreach (int item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             #endregion
+
+
         }
     }
 }
