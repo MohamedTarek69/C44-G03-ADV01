@@ -16,6 +16,11 @@
             //Console.WriteLine($"Is 15.5 in Range: {Range02.IsInRange(15.5)}");
 
             #endregion
+
+            #region Q2
+
+
+            #endregion
         }
     }
 }

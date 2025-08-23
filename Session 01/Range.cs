@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Numerics;
 
 namespace Session_01
 {
-    internal class Range<T> where T : IComparable<T> , INumber<T>
+    internal class Range<T> where T : IComparable<T>
     {
         #region Properties
         public T Max { get; }
@@ -17,7 +16,7 @@ namespace Session_01
         #endregion
 
         #region Constructors
-        public Range(T min, T max) {
+        public Range(T max, T min) {
             Max = max;
             Min = min;
         }
@@ -32,7 +31,9 @@ namespace Session_01
 
         public T Length()
         {
-            return Max - Min;
+            dynamic max = Max;
+            dynamic min = Min;
+            return max - min;
         }
 
         #endregion
