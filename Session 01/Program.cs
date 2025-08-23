@@ -74,6 +74,20 @@ namespace Session_01
 
             #endregion
 
+            #region Q4
+            //FixedSizeList<int> list = new FixedSizeList<int>(3);
+            //list.Add(1);
+            //list.Add(2);
+            //list.Add(3);
+            //Console.WriteLine(list.Get(0)); // Output: Item 1
+            //Console.WriteLine(list.Get(1)); // Output: Item 2
+            //Console.WriteLine(list.Get(2)); // Output: Item 3
+            //list.Add(4); //Unhandled exception. System.ArgumentException: The list is already full
+            //Console.WriteLine(list.Get(3)); //Unhandled exception. System.ArgumentException: Inavlid Index
+            //FixedSizeList<int> list2 = new FixedSizeList<int>(0); //Unhandled exception. System.ArgumentException: Capacity must be bigger than zero
+
+            #endregion
+
         }
     }
 }
