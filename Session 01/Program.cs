@@ -14,6 +14,19 @@ namespace Session_01
             }
         }
 
+        public static List<int> GetEvenNumbersInList(List<int> list)
+        {
+            List<int> EvenNumberList = new List<int>();
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] % 2 == 0)
+                {
+                    EvenNumberList.Add(list[i]);
+                }
+            }
+            return EvenNumberList;
+        }
+
         static void Main(string[] args)
         {
             #region Q1 
@@ -50,6 +63,16 @@ namespace Session_01
 
             #endregion
 
+            #region Q3
+            //List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //List<int> EvenNumberList = GetEvenNumbersInList(list);
+            //Console.WriteLine("Even Numbers in List:");
+            //foreach (int item in EvenNumberList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
 
         }
     }
